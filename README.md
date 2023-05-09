@@ -1,6 +1,6 @@
-# Projeto Exemplo
+# Projeto Exemplo .NET 6.
 
-Este projeto é um exemplo de aplicação .NET Core que utiliza as seguintes tecnologias:
+Este projeto é um exemplo de aplicação .NET 6 que utiliza as seguintes tecnologias:
 
 * AutoMapper
 * Entity Framework
@@ -11,6 +11,6 @@ Este projeto é um exemplo de aplicação .NET Core que utiliza as seguintes tec
 * JWT
 
 ## Instalação
-> * Verifique se você baixou o .NET 6
-> * Clone o repositório para o seu computador.
-> * Inicie utilizando o VisualStudio
+> Verifique se você baixou o .NET 6.
+> Clone o repositório para o seu computador.
+> Inicie utilizando o VisualStudio.
