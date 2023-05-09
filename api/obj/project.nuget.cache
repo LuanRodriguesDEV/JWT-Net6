@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nXl9KAEYakHshFw53VsMVtnIcKky3AxIK3LaJIuRRhLty1Q54KYemziLdC4QNvLd0qHdOOK7FIfd3Hz4HZ8rcQ==",
+  "dgSpecHash": "WvWBwFvBx7IPtqriWlZ5v2tq/iPGSs8EjCTVG5ML2YPfT31IBHqXUozdo+TunUrQh8Ql9uAkw6YNCVNh2h9v0A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Luan\\Desktop\\Clinica\\api\\api\\api\\api.csproj",
+  "projectFilePath": "C:\\Users\\Luan\\Documents\\GitHub\\JWT-Net6-EXAMPLE\\api\\api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Luan\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Luan\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

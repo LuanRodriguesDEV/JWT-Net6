@@ -31,7 +31,7 @@ namespace api.Services
         public async Task<string> Register(UserVOEnter user)
         {
             var verify = await _context.Users.Where(x => x.Email.ToLower().Equals(user.Email)).FirstOrDefaultAsync();
-                if(verify != null) throw new AplicationRequestExeption("Usuario não encontrado", HttpStatusCode.NotFound);
+                if(verify != null) throw new AplicationRequestExeption("Usuario já registrado", HttpStatusCode.Unauthorized);
 
             var model = _mapper.Map<UserVOEnter, User>(user);
             await _context.Users.AddAsync(model);
