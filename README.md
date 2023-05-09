@@ -11,6 +11,6 @@ Este projeto é um exemplo de aplicação .NET 6 que utiliza as seguintes tecnol
 * JWT
 
 ## Instalação
-> Verifique se você baixou o .NET 6.
-> Clone o repositório para o seu computador.
-> Inicie utilizando o VisualStudio.
+> * Verifique se você baixou o .NET 6.
+> * Clone o repositório para o seu computador.
+> * Inicie utilizando o VisualStudio.
