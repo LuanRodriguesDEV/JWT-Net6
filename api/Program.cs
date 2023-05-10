@@ -1,6 +1,7 @@
 using api.MIddleware;
 using api.Programs;
 using BackEnd_Clinica.MIddleware;
+using Microsoft.AspNetCore.SpaServices.ReactDevelopmentServer;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,8 +15,12 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddCorsPolicy();
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.DbConnectionSetup(builder.Configuration);
+builder.Services.AddSpaStaticFiles(configuration =>
+{
+    configuration.RootPath = "React";
+});
 var app = builder.Build();
-
+app.UseSpaStaticFiles();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
@@ -24,12 +29,13 @@ if (app.Environment.IsDevelopment())
 }
 app.UseRouting();
 
-
 app.UseMiddleware(typeof(ErrorHandleMiddleware));
 app.UseMiddleware(typeof(AuthenticatorMiddleware));
 app.UseAuthorization();
 
 app.UseCors("CorsPolicy");
 app.MapControllers();
+
+
 
 app.Run();
