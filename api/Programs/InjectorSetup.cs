@@ -9,7 +9,6 @@ namespace api.Programs
             services.AddScoped<JWTService>();
             services.AddScoped<UserService>();
             services.AddScoped<ForgotPassowordService>();
-            services.AddScoped<SendForgotEmailService>();
         }
     }
 }

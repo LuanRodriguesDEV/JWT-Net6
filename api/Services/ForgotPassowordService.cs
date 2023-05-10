@@ -10,12 +10,10 @@ namespace api.Services
     public class ForgotPassowordService
     {
         private readonly AppDbContext _context;
-        private readonly SendForgotEmailService _emailService;
 
-        public ForgotPassowordService(AppDbContext context, SendForgotEmailService emailService)
+        public ForgotPassowordService(AppDbContext context)
         {
             _context = context;
-            _emailService = emailService;
         }
 
         public async Task CreateForgot(ForgotDTO forgot)
@@ -35,7 +33,6 @@ namespace api.Services
             {
                 Model = vefiryRecovery;
             }
-            _emailService.SendEmail(Model.Email, "RecoveryPassword", $"localhost:3000/RecoveryPassword?recovery={Model.Id}");
             return;
 
         }
